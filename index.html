@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Listen to Legends</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/LOGO.ico">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" defer></script>
+        <!-- defer is used to avoid the addEventListener error -->
+    </head>
+
+    <body>
+    <div class="main_div">
+        <div class="music_container" id="music_container">
+            <h2 id="title">Shape of you</h2>
+            <h3 id="artist">Ed sheeran</h3>
+            <div class="image_container">
+                <img src="https://source.unsplash.com/1600x800/?singer, nature" alt="">
+            </div>
+
+            <!-- music  -->
+            <audio id="songs" src="Songs/Song5.mp3"></audio>
+
+            <div class="progressbar_container" id="progressbar_container">
+                <div class="musicduration" id="musicduration">
+                    <div class="current_time" id="current_time">00:00</div>
+                    <div class="total_time" id="total_time">00:00</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- music controls -->
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Prev"></i>
+                <i class="fas fa-play-circle" id ="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+                <i class="fa fa-repeat" aria-hidden="true" id="repeat" title="Repeat"></i>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
